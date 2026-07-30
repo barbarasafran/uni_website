@@ -1,0 +1,119 @@
+#autocomplete-wrapper {
+  position: relative;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+#search-kolegij {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+#search-kolegij:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+#autocomplete-lista {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--white);
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  list-style: none;
+  z-index: 100;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#autocomplete-lista li {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 0.95rem;
+}
+
+#autocomplete-lista li:hover {
+  background: var(--light);
+}
+
+#tablica-kolegija {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#tablica-kolegija th,
+#tablica-kolegija td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#tablica-kolegija th {
+  background: var(--primary);
+  color: var(--white);
+}
+
+#tablica-kolegija tbody tr:hover {
+  background: #f9f9f9;
+}
+
+#tablica-kolegija tfoot td {
+  font-weight: bold;
+  background: #f0f0f0;
+}
+
+#tablica-kolegija button {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#tablica-kolegija button:hover {
+  background: #c73652;
+}
+
+@media (max-width: 768px) {
+  #tablica-kolegija {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+#search-kolegij {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+#search-kolegij:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+#autocomplete-lista li {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 0.95rem;
+}
+
+#autocomplete-lista li:hover {
+  background: var(--light);
+}

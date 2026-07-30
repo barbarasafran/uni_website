@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algebra</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/nastavni-plan.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/typewriter-anim.css" />
+    <link rel="stylesheet" href="css/logo-text.css" />
+    <link rel="stylesheet" href="css/novosti.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div class="logo-container">
+        <img src="media\Algebra-logo.png" alt="Algebra logo" class="nav-logo" draggable="false" />
+        <span class="logo-text">Sveučilište Algebra</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#onama">O nama</a></li>
+        <li><a href="#novosti">Novosti</a></li>
+        <li><a href="#nastavni-plan">Nastavni plan</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#" id="btn-prijava">Prijava</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <header id="hero">
+      <video autoplay muted loop playsinline id="hero-video">
+        <source src="media\typingOnlaptop.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-content">
+        <h1>Algebra</h1>
+        <p id="typewriter"></p>
+      </div>
+    </header>
+
+    <main>
+      <section id="onama" data-aos="fade-right">
+        <h2>O nama</h2>
+        <div class="onama-tekst">
+          <p>
+            Obećajemo pomoć u pronalasku onoga što voliš raditi i da ćemo te
+            poticati na izvrsnost - kvalitetom programa i procesa, strastvenim
+            predavačima, globalno aplikabilnim znanjem te poticanjem kvalitete
+            života.
+          </p>
+          <br />
+          <p>
+            Postoje vrijednosti u koje vjerujemo od prvog dana, koje dijele
+            naši predavači, ali i naši polaznici, bez obzira imaju li oni 7
+            ili 77 godina.
+          </p>
+          <br />
+          <p>
+            Svi naši nastavni programi i procesi baziraju se na globalnim
+            standardima i najrelevantnijim znanjima potrebnim za uspjeh na
+            tržištu rada.
+            <strong>
+              100% naših studenata pronalazi posao unutar 6 mjeseci od diplome
+            </strong>
+            , dok čak 85% polaznika programa cjeloživotnog obrazovanja
+            promijeni posao ili napreduje u roku 3 mjeseca nakon završetka
+            programa.
+          </p>
+          <br />
+        </div>
+        <a href="zanimljivosti.html" class="poglavlje-link">Povijest i zanimljivosti Algebre →</a>
+      </section>
+
+      <section id="novosti" data-aos="fade-up">
+        <h2>Novosti</h2>
+        <div class="row g-3" id="galerija">
+          <div class="col-6 col-md-4">
+            <a
+              href="media\novost1.jpg"
+              data-fancybox="galerija"
+              data-caption="WorldSkills Kazan 2019 - Josip osvaja medalju izvrsnosti!"
+            >
+              <img
+                src="media\novost1.jpg"
+                class="galerija-slika"
+                alt="WorldSkills"
+                draggable="false"
+              />
+            </a>
+            <p class="news-title" onclick="openNews(1)">
+              WorldSkills Kazan 2019
+            </p>
+          </div>
+          <div class="col-6 col-md-4">
+            <a
+              href="media\novost2.jpg"
+              data-fancybox="galerija"
+              data-caption="Dobitnici stipendijskog natječaja za maturante"
+            >
+              <img
+                src="media\novost2.jpg"
+                class="galerija-slika"
+                alt="Stipendije" draggable="false"
+              />
+            </a>
+            <p class="news-title" onclick="openNews(2)">
+              Stipendijski natječaj
+            </p>
+          </div>
+          <div class="col-6 col-md-4">
+            <a
+              href="media\novost3.jpg"
+              data-fancybox="galerija"
+              data-caption="Algebra Junior - Digitalni ljetni kamp"
+            >
+              <img
+                src="media\novost3.jpg"
+                class="galerija-slika"
+                alt="Algebra Junior"
+                draggable="false"
+              />
+            </a>
+            <p class="news-title" onclick="openNews(3)">
+              Algebra Junior ljetni kamp
+            </p>
+          </div>
+        </div>
+
+        <div id="news-detail" class="news-detail hidden">
+          <button id="close-detail">✖ Natrag</button>
+
+          <img id="detail-img" src="" alt="Novost" />
+
+          <h2 id="detail-title"></h2>
+
+          <p id="detail-text"></p>
+        </div>
+      </section>
+
+      <section id="nastavni-plan" data-aos="fade-up">
+  <h2>Nastavni plan</h2>
+
+  <div id="curriculum-content">
+    <p id="curriculum-poruka">
+      Morate biti prijavljeni za pristup nastavnom planu.
+    </p>
+  </div>
+</section>
+
+  <section id="kontakt" data-aos="fade-up">
+  <h2>Kontakt</h2>
+
+  <div class="kontakt-wrapper">
+
+    <form
+      id="kontakt-forma"
+      action="https://www.fulek.com/mvc/supit/project-contact-form"
+      method="POST"
+    >
+      <label for="FullName">Ime i prezime</label>
+      <input type="text" id="FullName" name="FullName" required />
+
+      <label for="Email">E-mail</label>
+      <input type="email" id="Email" name="Email" required />
+
+      <label for="Importance">Važnost</label>
+      <select id="Importance" name="Importance">
+        <option value="low">Niska</option>
+        <option value="normal">Normalna</option>
+        <option value="high">Visoka</option>
+      </select>
+
+      <label class="checkbox-label">
+        <input type="checkbox" name="ReceiveNewsletter" value="true" />
+        Primaj newsletter
+      </label>
+
+      <label for="Message">Poruka</label>
+      <textarea id="Message" name="Message" rows="5" required></textarea>
+
+      <button type="submit">Pošalji</button>
+    </form>
+
+    <div class="mapa-wrapper">
+      <iframe
+        src="https://maps.google.com/maps?q=Algebra+Ilica+242+Zagreb&output=embed"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+</main>
+
+    <footer>
+      <p>&copy; 2026 Sveučilište Algebra | Gradišćanska 24, Zagreb</p>
+    </footer>
+
+    <div id="modal-login" class="custom-modal hidden">
+      <div class="custom-modal-content">
+        <span id="custom-modal-close">&times;</span>
+
+        <div id="custom-modal-tabovi">
+          <button class="tab-btn aktivan" id="tab-prijava">Prijava</button>
+          <button class="tab-btn" id="tab-registracija">Registracija</button>
+        </div>
+
+        <div id="forma-prijava">
+          <input type="text" id="login-username" placeholder="Korisničko ime" />
+          <input type="password" id="login-password" placeholder="Lozinka" />
+          <button id="btn-submit-login">Prijavi se</button>
+          <p id="login-error" class="hidden"></p>
+        </div>
+
+        <div id="forma-registracija" class="hidden">
+          <input type="text" id="reg-username" placeholder="Korisničko ime" />
+          <input type="password" id="reg-password" placeholder="Lozinka" />
+          <button id="btn-submit-registracija">Registriraj se</button>
+          <p id="reg-error" class="hidden"></p>
+          <p id="reg-uspjeh" class="hidden"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/ui.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/nastavni-plan.js"></script>
+    <script src="js/typewriter-anim.js"></script>
+    <script src="js/novosti.js"></script>
+  </body>
+</html>

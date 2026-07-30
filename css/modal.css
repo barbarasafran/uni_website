@@ -1,0 +1,98 @@
+.custom-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.custom-modal-content {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#custom-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  line-height: 1;
+}
+
+#custom-modal-close:hover {
+  color: var(--accent);
+}
+
+#custom-modal-tabovi {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid var(--primary);
+  background: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+}
+
+.tab-btn.aktivan {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.custom-modal-content input {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  width: 100%;
+}
+
+.custom-modal-content input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.custom-modal-content button:not(.tab-btn) {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 13px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.custom-modal-content button:not(.tab-btn):hover {
+  background: #c73652;
+}
+
+#login-error,
+#reg-error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+#reg-uspjeh {
+  color: green;
+  font-size: 0.9rem;
+}

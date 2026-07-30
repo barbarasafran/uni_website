@@ -1,0 +1,204 @@
+/* OPĆI RASPORED SEKCIJA - identično kao u sections.css */
+section {
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--primary);
+  border-left: 4px solid var(--accent);
+  padding-left: 15px;
+}
+
+.page-banner {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 160px 20px 60px;
+}
+
+.page-banner h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.page-banner p {
+  opacity: 0.85;
+  font-size: 1.1rem;
+}
+
+/* FILOZOFIJA */
+.filozofija-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.filozofija-blok p {
+  line-height: 1.8;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* ALGEBRA LAB */
+.lab-kartica {
+  background: var(--primary);
+  color: var(--white);
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.lab-kartica h2 {
+  color: var(--white);
+  border-left: 4px solid var(--accent);
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.lab-kartica p {
+  line-height: 1.8;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 3px solid var(--accent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 25px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -42px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 50%;
+  border: 3px solid var(--white);
+}
+
+.timeline-godina {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--white);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.timeline-sadrzaj h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: var(--primary);
+}
+
+.timeline-sadrzaj p {
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* STATS - identično kao .info-kartica iz sections.css */
+.stats-uvod {
+  margin-bottom: 30px;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  max-width: 800px;
+}
+
+/* PARTNERI */
+.partneri-lista {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.partneri-lista li {
+  background: var(--white);
+  padding: 15px 20px;
+  border-radius: 6px;
+  border-left: 4px solid var(--accent);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.partneri-lista li img {
+  max-width: 100%;
+  height: 80px;
+  object-fit: contain;
+  align-self: center;
+}
+
+/* LOKACIJA */
+.lokacija-info {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lokacija-info p {
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* FOOTER - identično kao u sections.css */
+footer {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 20px 40px;
+  margin-top: 60px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RESPONZIVNOST */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 20px;
+  }
+
+  .page-banner {
+    padding: 130px 20px 50px;
+  }
+
+  .page-banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .filozofija-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .partneri-lista {
+    grid-template-columns: 1fr;
+  }
+}
