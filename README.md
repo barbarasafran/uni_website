@@ -1,4 +1,4 @@
-# UNIVERSITY WEBSITE PROJECT
+# UNI WEBSITE PROJECT
 This website was developed as part of a university web development course.
 
 ## Technologies
